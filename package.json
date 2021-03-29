@@ -1,5 +1,5 @@
 {
-  "name": "puppeteerPractice",
+  "name": "puppeteerpractice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,6 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Harman Cheema",
+  "license": "MIT"
 }
