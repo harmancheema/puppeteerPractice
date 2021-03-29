@@ -7,10 +7,35 @@
     "puppeteer": "^5.5.0"
   },
   "devDependencies": {
-    "jest": "^26.6.3"
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "jest-puppeteer": "^4.4.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --detectOpenHandles",
+    "prettier-format": "prettier --config .prettierrc '**/*.js' --write",
+    "lint": "prettier --check .",
+  },
+  "husky": {
+    "pre-commit": "yarn prettier-format && git add -A ."
+  },
+  "jest": {
+    "verbose": true,
+    "preset": "jest-puppeteer",
+    "testTimeout": 30000,
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    }
   },
   "keywords": [],
   "author": "Harman Cheema",
