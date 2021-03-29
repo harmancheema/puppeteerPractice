@@ -24,7 +24,7 @@
   "scripts": {
     "test": "jest --detectOpenHandles",
     "prettier-format": "prettier --config .prettierrc '**/*.js' --write",
-    "lint": "prettier --check .",
+    "lint": "prettier --check ."
   },
   "husky": {
     "pre-commit": "yarn prettier-format && git add -A ."
