@@ -23,3 +23,8 @@ export const challengingDOM = {
   edit: 'a[href="#edit"]',
   delete: 'a[href="#delete"]',
 }
+
+export const checkboxes = {
+  checkbox1: 'form#checkboxes > input:nth-child(1)',
+  checkbox2: 'form#checkboxes > input:nth-child(3)',
+}
