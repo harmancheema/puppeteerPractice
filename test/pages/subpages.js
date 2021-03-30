@@ -13,3 +13,13 @@ export const brokenImages = {
   image2: 'img[src="hjkl.jpg"]',
   image3: 'img[src="img/avatar-blank.jpg"]',
 }
+
+export const challengingDOM = {
+  blueButton: 'a[class=button]',
+  redButton: 'a[class="button alert"]',
+  greenButton: 'a[class="button success"]',
+  answerSection: 'canvas#canvas',
+  table: 'div.large-10.columns > table',
+  edit: 'a[href="#edit"]',
+  delete: 'a[href="#delete"]',
+}
