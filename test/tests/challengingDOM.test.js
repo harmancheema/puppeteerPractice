@@ -5,7 +5,7 @@ import * as subpagesObj from '@pages/subpages'
 import { getElementText } from '@utils/pageUtils'
 import puppeteer from 'puppeteer'
 
-describe('broken images', () => {
+describe('challenging DOM', () => {
   let browser = null
   let page = null
 
@@ -27,7 +27,7 @@ describe('broken images', () => {
     await page.waitForSelector(homePageObj.headings.header)
 
     // Click on add/remove elements
-    await page.click(homePageObj.pageLinks.brokenImages)
+    await page.click(homePageObj.pageLinks.challengingDOM)
   })
 
   afterEach(async () => {
@@ -43,14 +43,22 @@ describe('broken images', () => {
   it('verify header', async () => {
     // Verify header text
     let header = await getElementText(page, subpagesObj.commonElements.header)
-    expect(header).toMatch('Broken Images')
+    expect(header).toMatch('Challenging DOM')
   })
 
-  it('images', async () => {
+  it('verify body', async () => {
+    // Verify header text
+    let header = await getElementText(page, subpagesObj.commonElements.body)
+    expect(header).toContain(
+      'The hardest part in automated web testing is finding the best locators',
+    )
+  })
+
+  it('all buttons', async () => {
     // Verify all images are present
-    const images = Object.values(subpagesObj.brokenImages)
-    for (const image of images) {
-      expect(await page.$(image)).toBeTruthy()
+    const buttons = Object.values(subpagesObj.challengingDOM)
+    for (const button of buttons) {
+      expect(await page.$(button)).toBeTruthy()
     }
   })
 })
