@@ -28,3 +28,7 @@ export const checkboxes = {
   checkbox1: 'form#checkboxes > input:nth-child(1)',
   checkbox2: 'form#checkboxes > input:nth-child(3)',
 }
+
+export const contextMenu = {
+  hotspot: 'div#hot-spot',
+}

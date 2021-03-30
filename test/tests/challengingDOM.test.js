@@ -26,7 +26,7 @@ describe('challenging DOM', () => {
     // Wait for selector
     await page.waitForSelector(homePageObj.headings.header)
 
-    // Click on add/remove elements
+    // Click link
     await page.click(homePageObj.pageLinks.challengingDOM)
   })
 
