@@ -1,5 +1,5 @@
 export const launchSettings = {
-  headless: true,
+  headless: false,
   slowMo: 0,
   args: ['--start-maximized'],
   defaultViewport: null,

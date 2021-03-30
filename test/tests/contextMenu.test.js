@@ -5,7 +5,7 @@ import * as subpagesObj from '@pages/subpages'
 import { getElementText } from '@utils/pageUtils'
 import puppeteer from 'puppeteer'
 
-describe('A/B test', () => {
+describe('context menu', () => {
   let browser = null
   let page = null
 
@@ -27,7 +27,7 @@ describe('A/B test', () => {
     await page.waitForSelector(homePageObj.headings.header)
 
     // Click link
-    await page.click(homePageObj.pageLinks.abTesting)
+    await page.click(homePageObj.pageLinks.contextMenu)
   })
 
   afterEach(async () => {
@@ -43,16 +43,14 @@ describe('A/B test', () => {
   it('verify header', async () => {
     // Verify header text
     let header = await getElementText(page, subpagesObj.commonElements.header)
-    try {
-      expect(header).toMatch('A/B Test Control')
-    } catch {
-      expect(header).toMatch('A/B Test Variation 1')
-    }
+    expect(header).toMatch('Context Menu')
   })
 
   it('verify body', async () => {
-    // Verify body text
+    // Verify header text
     let body = await getElementText(page, subpagesObj.commonElements.body)
-    expect(body).toContain('Also known as split testing.')
+    expect(body).toContain(
+      'Context menu items are custom additions that appear in the right-click menu.',
+    )
   })
 })
