@@ -22,20 +22,12 @@
     "jest-puppeteer": "^4.4.0"
   },
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "jest -c ./jest.puppeteer.config.js --detectOpenHandles -u",
     "prettier-format": "prettier --config .prettierrc '**/*.js' --write",
     "lint": "prettier --check ."
   },
   "husky": {
     "pre-commit": "yarn prettier-format && git add -A ."
-  },
-  "jest": {
-    "verbose": true,
-    "preset": "jest-puppeteer",
-    "testTimeout": 30000,
-    "transform": {
-      "^.+\\.(js|jsx)$": "babel-jest"
-    }
   },
   "keywords": [],
   "author": "Harman Cheema",

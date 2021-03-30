@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["test/pages/*"],
+      "@fixtures/*": ["test/fixtures/*"],
+      "@utils/*": ["test/utils/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
