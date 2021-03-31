@@ -32,3 +32,12 @@ export const checkboxes = {
 export const contextMenu = {
   hotspot: 'div#hot-spot',
 }
+
+export const disappearingElements = {
+  home: 'ul > li:nth-child(1)',
+  about: 'a[href="/about/"]',
+  contactUs: 'a[href="/contact-us/"]',
+  portfolio: 'a[href="/portfolio/"]',
+  gallery: 'a[href="/gallery/"]',
+  newPageHeading: 'h1',
+}
