@@ -41,3 +41,8 @@ export const disappearingElements = {
   gallery: 'a[href="/gallery/"]',
   newPageHeading: 'h1',
 }
+
+export const dragAndDrop = {
+  boxA: 'div#column-a',
+  boxB: 'div#column-b',
+}
