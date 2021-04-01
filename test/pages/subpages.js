@@ -46,3 +46,11 @@ export const dragAndDrop = {
   boxA: 'div#column-a',
   boxB: 'div#column-b',
 }
+
+export const dropdown = {
+  menu: 'select#dropdown',
+  option1: '1',
+  option2: '2',
+  option1selected: 'option[value="1"][selected="selected"]',
+  option2selected: 'option[value="2"][selected="selected"]',
+}
