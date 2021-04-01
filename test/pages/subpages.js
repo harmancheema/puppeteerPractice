@@ -54,3 +54,10 @@ export const dropdown = {
   option1selected: 'option[value="1"][selected="selected"]',
   option2selected: 'option[value="2"][selected="selected"]',
 }
+
+export const dynamicContent = {
+  staticContent: 'a[href="/dynamic_content?with_content=static"]',
+  firstParagraph: 'div#content > div.row:nth-child(1) > div.large-10.columns',
+  secondParagraph: 'div#content > div.row:nth-child(4) > div.large-10.columns',
+  thirdParagraph: 'div#content > div.row:nth-child(7) > div.large-10.columns',
+}
