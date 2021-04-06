@@ -61,3 +61,12 @@ export const dynamicContent = {
   secondParagraph: 'div#content > div.row:nth-child(4) > div.large-10.columns',
   thirdParagraph: 'div#content > div.row:nth-child(7) > div.large-10.columns',
 }
+
+export const dynamicControls = {
+  header: 'div.example > h4:nth-child(1)',
+  addRemoveButton: 'button[onclick="swapCheckbox()"]',
+  checkbox: 'div#checkbox',
+  enableDisableButton: 'button[onclick="swapInput()"]',
+  textField: 'input[type=text]',
+  successMessage: 'p#message',
+}
