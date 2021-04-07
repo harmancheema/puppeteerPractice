@@ -70,3 +70,11 @@ export const dynamicControls = {
   textField: 'input[type=text]',
   successMessage: 'p#message',
 }
+
+export const dynamicLoading = {
+  exampleOne: 'a[href*="1"]',
+  exampleTwo: 'a[href*="2"]',
+  subHeader: 'div.example > h3 ~ h4',
+  startButton: 'div#start > button',
+  finishedText: 'div#finish > h4',
+}
