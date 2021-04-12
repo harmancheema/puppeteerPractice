@@ -78,3 +78,10 @@ export const dynamicLoading = {
   startButton: 'div#start > button',
   finishedText: 'div#finish > h4',
 }
+
+export const entryAd = {
+  restartAd: 'a#restart-ad',
+  modalTitle: 'div.modal-title > h3',
+  modalBody: 'div.modal-body > p',
+  modalFooter: 'div.modal-footer > p',
+}
