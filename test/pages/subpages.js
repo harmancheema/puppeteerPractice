@@ -85,3 +85,8 @@ export const entryAd = {
   modalBody: 'div.modal-body > p',
   modalFooter: 'div.modal-footer > p',
 }
+
+export const notificationMessages = {
+  newMessage: 'a[href="/notification_message"]',
+  notifcation: 'div#flash',
+}
