@@ -90,3 +90,8 @@ export const notificationMessages = {
   newMessage: 'a[href="/notification_message"]',
   notifcation: 'div#flash',
 }
+
+export const multipleWindows = {
+  newWindow: '#content > div > a',
+  newHeader: 'h3',
+}
