@@ -95,3 +95,8 @@ export const multipleWindows = {
   newWindow: '#content > div > a',
   newHeader: 'h3',
 }
+
+export const largeAndDeepDOM = {
+  subheaders: 'h4',
+  uniqueTableIdentifier: 'tr.row-7 > td.column-13',
+}
