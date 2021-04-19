@@ -100,3 +100,10 @@ export const largeAndDeepDOM = {
   subheaders: 'h4',
   uniqueTableIdentifier: 'tr.row-7 > td.column-13',
 }
+
+export const nestedFrames = {
+  leftFrame: 'frame[name="frame-left"]',
+  middleFrame: 'frame[name="frame-middle"]',
+  rightFrame: 'frame[name="frame-right"]',
+  bottomFrame: 'frame[name="frame-bottom"]',
+}
